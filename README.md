@@ -1,25 +1,43 @@
-# Hi, I'm Love Kumar Todawat 👋
+<p align="center">
+  <img src="./assets/hero.svg?v=1" alt="Love Kumar Todawat, AI/ML Engineer in Udaipur, Rajasthan" width="100%">
+</p>
 
-**AI/ML Engineer | Edge Deployment & Scalable Backends**
+<p align="center">
+  <img src="./assets/about-life.svg?v=1" alt="What I build: computer vision, NL-to-SQL and RAG, real-time voice, backends and deployment" width="100%">
+</p>
 
-I am an AI/ML Engineer based in Udaipur, Rajasthan, with over a year of experience building production AI systems under real hardware and cost constraints. My expertise spans computer-vision pipelines optimized for 4 GB VRAM, local LLM deployments on commodity hardware, and real-time inference engines held under 500 milliseconds. I own the full system lifecycle, from automated data ingestion and natural-language query layers to containerized FastAPI backends on edge and cloud infrastructure.
+<p align="center">
+  <img src="./assets/stack.svg?v=1" alt="Tech stack: Python, PyTorch, OpenCV, FastAPI, LangChain, Hugging Face, Docker, PostgreSQL, MySQL and more" width="100%">
+</p>
 
-### 💻 Tech Stack
-*   **Languages:** Python, SQL, JavaScript, TypeScript, HTML5, and CSS.
-*   **Machine Learning & CV:** PyTorch, TensorFlow, OpenCV, MobileSAM, SegFormer, and CLIP.
-*   **GenAI & Edge:** Groq Llama-3 70B, Gemini Flash, Local LLMs (Qwen2.5 3B), RAG, and LangChain.
-*   **Backend & Data:** FastAPI, WebSockets, SQLAlchemy, PostgreSQL, MySQL, and FAISS.
-*   **DevOps:** Docker, Nginx, Cloudflare Tunnels, Render, Modal, and Git/GitHub.
+<p align="center">
+  <img src="./assets/id-dashboard.svg?v=1" alt="ID card and key numbers from shipped work" width="100%">
+</p>
 
-### 🚀 Featured Work
-*   **Bharat Ceramic (Computer-Vision Surface Visualizer):** Built a fully local CV pipeline on edge hardware with 4 GB VRAM using MobileSAM, OpenCV, and CLIP. It features zero-shot surface segmentation and a dynamic OpenCV grid engine that warps 2D textures into true physical 3D perspective.
-*   **Mewar ERP (NL-to-SQL Query Layer):** Architected a multilingual NL-to-SQL engine using Groq LLMs, FAISS, and FastAPI, allowing non-technical staff to query live inventory and CRM schemas in Hindi, English, and Hinglish.
-*   **Real-Time Voice & Chat Automation:** Engineered a dual-agent system with Groq Llama-3, Cartesia, and Twilio, reducing client operational overhead by 80% while keeping end-to-end latency under 500 ms.
-*   **Risk Scoring & Data Ingestion Platform:** Developed a continuous pipeline using FastAPI and the Gmail API to map inbound records, applying an LLM scoring model to classify B2B accounts into risk states based on sentiment and urgency.
-*   **Multi-Party Streaming Platform:** Architected a low-latency audio/video platform using React, FastAPI, LiveKit, and WebSockets with JWT-signed access control.
+## Featured work
 
-### 📫 Connect with me
-*   **Portfolio:** love-todawat-portfolio.onrender.com
-*   **Email:** lovetodawat15@gmail.com
-*   **LinkedIn:** linkedin.com/in/love-todawat
-*   **GitHub:** github.com/love995077
+| Project | What it does | Stack |
+|---|---|---|
+| **Computer-Vision Surface Visualizer** (Bharat Ceramic) | Fully local pipeline on 4 GB VRAM: single-click MobileSAM surface segmentation, homography grid that warps tiles into true 3D perspective at real dimensions, ambient-light blending, and CLIP search against the product catalogue. | MobileSAM, OpenCV, CLIP, NumPy, FastAPI, Docker |
+| **Natural-Language Query Layer** (Mewar ERP) | Multilingual NL-to-SQL over live inventory, supply-chain and CRM data in Hindi, English and Hinglish, with on-demand charts, KPI cards, shortage detection, FAISS semantic search and RBAC checks before any query runs. | Groq LLMs, FAISS, FastAPI, Chart.js, MySQL |
+| **Real-Time Voice & Chat Automation Suite** | Dual-agent system that qualifies inbound leads with end-to-end latency under 500 ms, using custom VAD and WebSocket audio streaming on a serverless orchestration layer. | Groq Llama-3, Cartesia, Twilio, Modal, FastAPI |
+| **Automated Ingestion & Risk Scoring Platform** | Gmail API and webhook ingestion with RFC 822 threading, an LLM classifier scoring each record into four risk states, and live WebSocket updates to an operations dashboard. | FastAPI, SQLAlchemy, OpenAI API, Gmail API, APScheduler |
+| **Real-Time Multi-Party Streaming Platform** | Multi-party audio, video and screen sharing with JWT-signed access and a hardened custom WebSocket signalling server. | React, FastAPI, LiveKit, WebSockets |
+
+<sub>Client projects are private; happy to walk through the architecture on a call.</sub>
+
+<p align="center">
+  <img src="./assets/connect.svg?v=1" alt="Connect with Love" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/love-todawat"><b>LinkedIn</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/love995077"><b>GitHub</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://love-todawat-portfolio.onrender.com"><b>Portfolio</b></a>
+  &nbsp;·&nbsp;
+  <a href="mailto:lovetodawat15@gmail.com"><b>Email</b></a>
+</p>
+
+<sub>Fonts: Barlow, Barlow Condensed and JetBrains Mono (SIL Open Font License). Tech icons: Simple Icons (CC0). See <code>assets/licenses/</code>.</sub>
