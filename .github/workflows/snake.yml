@@ -1,0 +1,34 @@
+name: Contribution snake
+
+on:
+  schedule:
+    - cron: "17 0 * * *"   # daily, 05:47 IST
+  workflow_dispatch:       # lets you run it by hand from the Actions tab
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate snake from the contribution graph
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-light.svg?palette=github-light&color_snake=#2bcb78&color_dots=#efe9fd,#d6c8fb,#ad93f5,#7b4ff0,#4f20c4
+            dist/snake-dark.svg?palette=github-dark&color_snake=#3ddc8c&color_dots=#1f1940,#3d2d7d,#5b40bb,#8463f5,#bba6ff
+
+      - name: Publish to the output branch
+        run: |
+          cd dist
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -qm "Update contribution snake"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" output
